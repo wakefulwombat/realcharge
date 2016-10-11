@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9ADFC494-1A84-4F2D-AA45-1774973680D7}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>shimarza</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\Library\DxLib_VC\include;..\..\..\..\Library\GuruGuruSMF4</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\..\..\..\Library\DxLib_VC\include;..\..\..\..\Library\GuruGuruSMF4</AdditionalLibraryDirectories>
+      <AdditionalDependencies>GuruGuruSMF4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\YUDAI\Programming\Library\dxlib\include;C:\Users\YUDAI\Programming\Library\gurugurusmf\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\YUDAI\Programming\Library\dxlib\lib;C:\Users\YUDAI\Programming\Library\gurugurusmf\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>GuruGuruSMF4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\Library\DxLib_VC\include;..\..\..\..\Library\GuruGuruSMF4</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\..\..\..\Library\DxLib_VC\include;..\..\..\..\Library\GuruGuruSMF4</AdditionalLibraryDirectories>
+      <AdditionalDependencies>GuruGuruSMF4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\YUDAI\Programming\Library\dxlib\include;C:\Users\YUDAI\Programming\Library\gurugurusmf\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Users\YUDAI\Programming\Library\dxlib\lib;C:\Users\YUDAI\Programming\Library\gurugurusmf\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>GuruGuruSMF4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="backEffect.cpp" />
+    <ClCompile Include="backEffectManage.cpp" />
+    <ClCompile Include="barrage.cpp" />
+    <ClCompile Include="barrageManage.cpp" />
+    <ClCompile Include="board.cpp" />
+    <ClCompile Include="bomb.cpp" />
+    <ClCompile Include="bombManage.cpp" />
+    <ClCompile Include="boss.cpp" />
+    <ClCompile Include="bossAttack.cpp" />
+    <ClCompile Include="bossAttackManage.cpp" />
+    <ClCompile Include="bossAttack_1.cpp" />
+    <ClCompile Include="bossAttack_2.cpp" />
+    <ClCompile Include="bossAttack_3.cpp" />
+    <ClCompile Include="bossAttack_4.cpp" />
+    <ClCompile Include="bossAttack_5.cpp" />
+    <ClCompile Include="bossAttack_6.cpp" />
+    <ClCompile Include="bossAttack_7.cpp" />
+    <ClCompile Include="bossBullet.cpp" />
+    <ClCompile Include="bossEvent.cpp" />
+    <ClCompile Include="bossEventManage.cpp" />
+    <ClCompile Include="bossManage.cpp" />
+    <ClCompile Include="bullet.cpp" />
+    <ClCompile Include="bulletManage.cpp" />
+    <ClCompile Include="burnEffect.cpp" />
+    <ClCompile Include="burnEffectManage.cpp" />
+    <ClCompile Include="charactor.cpp" />
+    <ClCompile Include="collapsar.cpp" />
+    <ClCompile Include="collapsarManage.cpp" />
+    <ClCompile Include="enemyBulletManageEX.cpp" />
+    <ClCompile Include="enemyLazer.cpp" />
+    <ClCompile Include="enemyLazerBezier.cpp" />
+    <ClCompile Include="lsystem.cpp" />
+    <ClCompile Include="mover.cpp" />
+    <ClCompile Include="playerBulletEX.cpp" />
+    <ClCompile Include="playerBulletManagerEX.cpp" />
+    <ClCompile Include="playerEX.cpp" />
+    <ClCompile Include="sceneBossPractice.cpp" />
+    <ClCompile Include="sceneGameExtraSelectMode.cpp" />
+    <ClCompile Include="scenePause.cpp" />
+    <ClCompile Include="scenePlayerDead.cpp" />
+    <ClCompile Include="shockLazer.cpp" />
+    <ClCompile Include="shockWave.cpp" />
+    <ClCompile Include="common.cpp" />
+    <ClCompile Include="enemy.cpp" />
+    <ClCompile Include="enemyManage.cpp" />
+    <ClCompile Include="input.cpp" />
+    <ClCompile Include="item.cpp" />
+    <ClCompile Include="itemManage.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="music.cpp" />
+    <ClCompile Include="numericalBar.cpp" />
+    <ClCompile Include="numericalBarManage.cpp" />
+    <ClCompile Include="objectBase.cpp" />
+    <ClCompile Include="picture.cpp" />
+    <ClCompile Include="player.cpp" />
+    <ClCompile Include="sceneEnding.cpp" />
+    <ClCompile Include="sceneGameExtra.cpp" />
+    <ClCompile Include="sceneGameFilm.cpp" />
+    <ClCompile Include="sceneKeyConfig.cpp" />
+    <ClCompile Include="sceneManager.cpp" />
+    <ClCompile Include="sceneMusicRoom.cpp" />
+    <ClCompile Include="sceneOpening.cpp" />
+    <ClCompile Include="sceneSelectDifficulty.cpp" />
+    <ClCompile Include="sceneSelectPracticeStage.cpp" />
+    <ClCompile Include="sceneStagePractice.cpp" />
+    <ClCompile Include="sceneSelectBossPractice.cpp" />
+    <ClCompile Include="selifBox.cpp" />
+    <ClCompile Include="selifBoxManage.cpp" />
+    <ClCompile Include="shockWaveManage.cpp" />
+    <ClCompile Include="sound.cpp" />
+    <ClCompile Include="textEffect.cpp" />
+    <ClCompile Include="textEffectManage.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="backEffect.h" />
+    <ClInclude Include="backEffectManage.h" />
+    <ClInclude Include="barrage.h" />
+    <ClInclude Include="barrageManage.h" />
+    <ClInclude Include="board.h" />
+    <ClInclude Include="bomb.h" />
+    <ClInclude Include="bombManage.h" />
+    <ClInclude Include="boss.h" />
+    <ClInclude Include="bossAttack.h" />
+    <ClInclude Include="bossAttackManage.h" />
+    <ClInclude Include="bossAttack_1.h" />
+    <ClInclude Include="bossAttack_2.h" />
+    <ClInclude Include="bossAttack_3.h" />
+    <ClInclude Include="bossAttack_4.h" />
+    <ClInclude Include="bossAttack_5.h" />
+    <ClInclude Include="bossAttack_6.h" />
+    <ClInclude Include="bossAttack_7.h" />
+    <ClInclude Include="bossBullet.h" />
+    <ClInclude Include="bossManage.h" />
+    <ClInclude Include="bullet.h" />
+    <ClInclude Include="bulletBase.h" />
+    <ClInclude Include="bulletManage.h" />
+    <ClInclude Include="burnEffect.h" />
+    <ClInclude Include="burnEffectManage.h" />
+    <ClInclude Include="charactor.h" />
+    <ClInclude Include="bossEvent.h" />
+    <ClInclude Include="bossEventManage.h" />
+    <ClInclude Include="collapsar.h" />
+    <ClInclude Include="collapsarManage.h" />
+    <ClInclude Include="enemyBulletManageEX.h" />
+    <ClInclude Include="enemyLazer.h" />
+    <ClInclude Include="enemyLazerBase.h" />
+    <ClInclude Include="enemyLazerBezier.h" />
+    <ClInclude Include="IaddBeatedCount.h" />
+    <ClInclude Include="IgetBoss.h" />
+    <ClInclude Include="IgetBossAttackInfo.h" />
+    <ClInclude Include="IgetBossEventNow.h" />
+    <ClInclude Include="igetGameClearData.h" />
+    <ClInclude Include="igetIsColding.h" />
+    <ClInclude Include="IgetStage.h" />
+    <ClInclude Include="IsetBoss.h" />
+    <ClInclude Include="IsetBossDamage.h" />
+    <ClInclude Include="IsetBossEvent.h" />
+    <ClInclude Include="IgetEnemyInfomation.h" />
+    <ClInclude Include="IgetPosition.h" />
+    <ClInclude Include="IsetBarrage.h" />
+    <ClInclude Include="IsetBomb.h" />
+    <ClInclude Include="IsetBossInfo.h" />
+    <ClInclude Include="IsetBossMoveExternal.h" />
+    <ClInclude Include="isetBossPracticeBossDeadFlag.h" />
+    <ClInclude Include="IsetBulletInvalid.h" />
+    <ClInclude Include="IsetCollapsar.h" />
+    <ClInclude Include="IsetEnemyDamage.h" />
+    <ClInclude Include="isetEnemyLazer.h" />
+    <ClInclude Include="isetGameClearData.h" />
+    <ClInclude Include="IsetNextStage.h" />
+    <ClInclude Include="isetPlayerBulletEX.h" />
+    <ClInclude Include="IsetShockWave.h" />
+    <ClInclude Include="isetStandBulletEX.h" />
+    <ClInclude Include="isetStandShockLazerEX.h" />
+    <ClInclude Include="IsetTextEffect.h" />
+    <ClInclude Include="lsystem.h" />
+    <ClInclude Include="player.h" />
+    <ClInclude Include="playerBulletEX.h" />
+    <ClInclude Include="playerBulletManagerEX.h" />
+    <ClInclude Include="playerEX.h" />
+    <ClInclude Include="sceneBossPractice.h" />
+    <ClInclude Include="sceneGameExtraSelectMode.h" />
+    <ClInclude Include="scenePause.h" />
+    <ClInclude Include="scenePlayerDead.h" />
+    <ClInclude Include="shockLazer.h" />
+    <ClInclude Include="shockLazerDiv.h" />
+    <ClInclude Include="shockWave.h" />
+    <ClInclude Include="enemy.h" />
+    <ClInclude Include="enemyManage.h" />
+    <ClInclude Include="fixObject.h" />
+    <ClInclude Include="IgameQuit.h" />
+    <ClInclude Include="IgetPlayerInfomation.h" />
+    <ClInclude Include="IsetBackEffect.h" />
+    <ClInclude Include="IsetBullet.h" />
+    <ClInclude Include="input.h" />
+    <ClInclude Include="IsetBurnEffect.h" />
+    <ClInclude Include="IsetDifficulty.h" />
+    <ClInclude Include="IsetItem.h" />
+    <ClInclude Include="IsetNextScene.h" />
+    <ClInclude Include="IsetNumericalBar.h" />
+    <ClInclude Include="IsetSelifBox.h" />
+    <ClInclude Include="item.h" />
+    <ClInclude Include="itemManage.h" />
+    <ClInclude Include="mover.h" />
+    <ClInclude Include="common.h" />
+    <ClInclude Include="music.h" />
+    <ClInclude Include="numericalBar.h" />
+    <ClInclude Include="numericalBarManage.h" />
+    <ClInclude Include="objectBase.h" />
+    <ClInclude Include="picture.h" />
+    <ClInclude Include="sceneBase.h" />
+    <ClInclude Include="sceneEnding.h" />
+    <ClInclude Include="sceneGameExtra.h" />
+    <ClInclude Include="sceneGameFilm.h" />
+    <ClInclude Include="sceneKeyConfig.h" />
+    <ClInclude Include="sceneManager.h" />
+    <ClInclude Include="sceneMusicRoom.h" />
+    <ClInclude Include="sceneOpening.h" />
+    <ClInclude Include="sceneSelectDifficulty.h" />
+    <ClInclude Include="sceneSelectPracticeStage.h" />
+    <ClInclude Include="sceneStagePractice.h" />
+    <ClInclude Include="sceneSelectBossPractice.h" />
+    <ClInclude Include="selifBox.h" />
+    <ClInclude Include="selifBoxManage.h" />
+    <ClInclude Include="shockWaveManage.h" />
+    <ClInclude Include="sound.h" />
+    <ClInclude Include="taskBase.h" />
+    <ClInclude Include="textEffect.h" />
+    <ClInclude Include="textEffectManage.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
