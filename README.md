@@ -1,3 +1,6 @@
+*ここにあるのはVisual Studio用プロジェクトファイルとソースコードのみです．*
+*ライブラリ，画像音楽等素材は含まれておりません．*
+
 # 現充爆奇譚  Real Charge Explosion  
 ジャンル:被弾型アクション弾幕STG  
 作者:wakefulwombat(タンタル)   
